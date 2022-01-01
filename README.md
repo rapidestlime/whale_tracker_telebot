@@ -14,7 +14,11 @@ Python Based telegram bot to track whale movements on block explorer (updated as
 
 ## Usage:
 ```/start``` to start tracker, can set intervals within the code at ```job_queue.run_repeating```
+
 ```/end``` to end tracker
+
 ```/new``` to add new record
+
 ```/update``` to update record
+
 ```/delete``` to delete record
