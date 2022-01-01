@@ -194,7 +194,7 @@ def deleteconfirm(update,context):
     if option == "YES":
         con = sqlite3.connect('whale_list.db') # connect to db
         cur = con.cursor()
-        cur.execute("DELETE FROM whales_ethereum WHERE txnhash=?", ("delete"))
+        cur.execute("DELETE FROM whales_ethereum WHERE txnhash=?", ("delete",))
         con.commit()
         con.close()
         update.message.reply_text('Address deleted successfully!')
@@ -221,3 +221,4 @@ updater.start_webhook(listen="0.0.0.0",
                           url_path=telegram_bot_token,
                           webhook_url='https://explorer-whale-tracker.herokuapp.com/' + telegram_bot_token)
 #updater.bot.setWebhook('https://explorer-whale-tracker.herokuapp.com/' + telegram_bot_token)
+updater.idle()
