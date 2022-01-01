@@ -30,7 +30,7 @@ dispatcher = updater.dispatcher
 def start(update,context): #func to start periodic checks on wallet addresses
     chat_id = update.effective_chat.id
     print(chat_id)
-    if chat_id != 433684446: # prevent other unautorised users
+    if chat_id != xxxxxx: # prevent other unautorised users
         context.bot.send_message(chat_id=update.message.chat_id, text='You are not authorised to use this bot!')
     else:
         context.job_queue.run_repeating(search, 30, context=update.message.chat_id) # runs checks every 60 seconds
