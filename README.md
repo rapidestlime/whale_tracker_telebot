@@ -5,6 +5,7 @@ Python Based telegram bot to track whale movements on block explorer (updated as
 1. add tables for whales from different chains
 2. add transaction information in tele msg?
 3. enable backup of db files as heroku has flaw, files gone after instance restarts from idle, redeploy
+4. Bug to fix - Unable to "cancel" operation halfway for ```/new```, ```/update```, ```/delete``` even after following example :(
 
 ## Things to note:
 1. Host on local server with whaletrackerbot.py
